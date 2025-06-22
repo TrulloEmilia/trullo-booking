@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking Widget</title>
+  <style>
+    html, body {
+      height: auto;
+      max-height: 100vh;
+      overflow: hidden;
+      background: transparent;
+      margin: 0;
+    }
+    #apartmentIframeAll {
+      min-height: 800px;
+      overflow: visible !important;
+      position: relative;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <div id="apartmentIframeAll"></div>
+  <script src="https://login.smoobu.com/js/Settings/BookingToolIframe.js"></script>
+  <script>
+    BookingToolIframe.initialize({
+      url: "https://login.smoobu.com/en/booking-tool/iframe/1287078",
+      baseUrl: "https://login.smoobu.com",
+      target: "#apartmentIframeAll"
+    });
+  </script>
+</body>
+</html>
