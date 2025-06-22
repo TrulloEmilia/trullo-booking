@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Your Stay at Trullo Emilia</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    #apartmentIframeAll {
+      min-height: 800px;
+      overflow: visible !important;
+      position: relative;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <h1>Book Your Stay at Trullo Emilia</h1>
+  <div id="apartmentIframeAll"></div>
+  <script src="https://login.smoobu.com/js/Settings/BookingToolIframe.js"></script>
+  <script>
+    BookingToolIframe.initialize({
+      url: "https://login.smoobu.com/en/booking-tool/iframe/1287078",
+      baseUrl: "https://login.smoobu.com",
+      target: "#apartmentIframeAll"
+    });
+  </script>
+</body>
+</html>
